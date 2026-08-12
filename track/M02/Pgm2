@@ -1,0 +1,31 @@
+import java.util.Scanner;
+
+public class Pgm2 {
+
+    public static void main(String[] args) {
+
+        Scanner scan = new Scanner(System.in);
+
+        System.out.println("Enter the number : ");
+
+        int num = scan.nextInt();
+
+        switch (num) {
+
+            case 1:
+                System.out.println("ONE");
+                break;
+
+            case 2:
+                System.out.println("TWO");
+                break;
+
+            case 3:
+                System.out.println("Three");
+                break;
+
+            default:
+                System.out.println("invalid");
+        }
+    }
+}
