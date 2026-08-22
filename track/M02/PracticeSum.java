@@ -1,12 +1,15 @@
+
 import java.util.Scanner;
 
 class Student {
+
     int registrationId;
     String name;
     double attendancePercentage;
 }
 
 public class PracticeSum {
+
     public static void main(String[] args) {
 
         Scanner sc = new Scanner(System.in);
@@ -32,8 +35,7 @@ public class PracticeSum {
         // Make selectedStudent refer to the matching existing object
         if (newRegistrationId == s1.registrationId) {
             selectedStudent = s1;
-        } 
-        else if (newRegistrationId == s2.registrationId) {
+        } else if (newRegistrationId == s2.registrationId) {
             selectedStudent = s2;
         }
 
@@ -42,16 +44,15 @@ public class PracticeSum {
             selectedStudent.attendancePercentage = newAttendancePercentage;
 
             System.out.println("Selected Student: " + selectedStudent.name);
-        } 
-        else {
+        } else {
             System.out.println("Student not found.");
         }
 
         // Display both records
-        System.out.println(s1.registrationId + " - " + s1.name + " - " 
-                           + s1.attendancePercentage + "%");
+        System.out.println(s1.registrationId + " - " + s1.name + " - "
+                + s1.attendancePercentage + "%");
 
-        System.out.println(s2.registrationId + " - " + s2.name + " - " 
-                           + s2.attendancePercentage + "%");
+        System.out.println(s2.registrationId + " - " + s2.name + " - "
+                + s2.attendancePercentage + "%");
     }
 }
